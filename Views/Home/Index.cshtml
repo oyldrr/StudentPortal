@@ -1,0 +1,20 @@
+﻿@{
+	ViewData["Title"] = "Ana sayfa";
+}
+
+<div class="text-center">
+	<h1 class="display-4">Hoşgeldiniz!</h1>
+	<img src="~/images/homepage.jpeg" alt="Student Portal" />
+</div>
+
+
+@{
+	ViewBag.Title = "Session Demo";
+}
+
+<h2>Session</h2>
+
+<a type="submit" class="btn btn-danger ms-3" asp-action="SetSession" asp-controller="Home">
+</a>
+<p>User Name: @ViewBag.UserName</p>
+<p>User Age: @ViewBag.UserAge</p>
